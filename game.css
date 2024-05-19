@@ -1,0 +1,84 @@
+body {
+    color: #ffffff;
+}
+
+.container {
+    padding-top: 0.5rem;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: #011339;
+    font-size: 3rem;
+    min-width: 30rem;
+    min-height: 2.5rem;
+    border-radius: 50px;
+    border: 2px solid #541442;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 203, 247, 0.2);
+    transition: transform 100ms;
+    transform: scale(1.05);
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color: rgb(104, 18, 68);
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+.correct {
+    background-color: rgb(11, 223, 36);
+}
+
+.incorrect {
+    background-color: rgb(230, 29, 29);
+}
+
+.hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.hud-main-text{
+    text-align: center;
+}
+
+#progressBar{
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(11,223,36);
+    margin-top: 2rem;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+#progressBarfull {
+    height: 100%;
+    background: rgb(11,223,36);
+    width: 0%; 
+}
+
+#question{
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container{
+        min-width: 40rem;
+    }
+}
